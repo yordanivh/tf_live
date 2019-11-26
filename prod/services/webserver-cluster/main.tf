@@ -24,7 +24,7 @@ resource "aws_autoscaling_schedule" "scale_out_during_business_hours" {
   autoscaling_group_name=module.webserver-cluster.asg_name
 }
 
-resource "aws_autoscaling_scheduel" "scale_in_at_night" {
+resource "aws_autoscaling_schedule" "scale_in_at_night" {
   min_size=2
   max_size=10
   desired_capacity=2
